@@ -1,0 +1,37 @@
+#+html:<h1 align="center">The Relax Keyboard Layout</h1>
+
+* What
+A keyboard layout the Kinesis Advantage2 that's designed to minimize muscle usage.
+** Features
+- The most commonly used letters and punctuation (biased towards programming) are assigned to the easiest-to-reach keys
+- Thanks to the Kinesis Advantage2, four different 'layers' allow us to reuse those easiest keys four times
+- With a foot pedal, no thumb usage is necessary, allowing us to type from a relaxed hand position
+- Common bigrams are arranged either for opposite hands for an easy finger roll on one hand
+- F keys are more accessible than on a normal keyboard
+- The Kinesis Advantage2 makes it easy to customize the layout
+
+* Why
+I have a genetic muscle disease that causes my muscles to become exhausted very easily. I cannot sustain the exertion required for normal computer use, and if I try to push my hands and arms beyond their limits, it gets painful. Since developing and adapting to this keyboard layout, however, I've been able to be more productive without wearing out my muscles to an unhealthy degree.
+
+* For Whom
+Myself and anyone else who finds that using the normal QWERTY layout is too strenuous or painful. I think this layout could especially help people with Repetitive Strain Injury from computer use and, while I'm no doctor, I suspect it might help prevent it.
+
+* By Whom
+Me, acknowledging:
+- Kinesis, for their excellent keyboard: https://kinesis-ergo.com/keyboards/advantage2-keyboard/
+- The workman layout, from which I drew some inspiration: https://workmanlayout.org/
+- I believe I used this excellent site for data on the most commonly used letters, bigrams, and trigrams in English, but it seems to have disappeared: http://mtgap.bilfo.com/theory-of-letter-frequency.html
+- Xah Lee, for this report on punctuation frequency in computer languages: http://xahlee.info/comp/computer_language_char_distribution.html
+- This online tool I used to the image of the layout: http://www.keyboard-layout-editor.com/,
+
+* How
+** Installation
+
+** Use
+
+** License
+  
+** Development
+  
+** Contributing
+
