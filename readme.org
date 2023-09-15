@@ -2,6 +2,7 @@
 
 * What
 A keyboard layout the Kinesis Advantage2 that's designed to minimize muscle usage.
+
 ** Features
 - The most commonly used letters and punctuation (biased towards programming) are assigned to the easiest-to-reach keys
 - Thanks to the Kinesis Advantage2, four different 'layers' allow us to reuse those easiest keys four times
@@ -22,16 +23,41 @@ Me, acknowledging:
 - The workman layout, from which I drew some inspiration: https://workmanlayout.org/
 - I believe I used this excellent site for data on the most commonly used letters, bigrams, and trigrams in English, but it seems to have disappeared: http://mtgap.bilfo.com/theory-of-letter-frequency.html
 - Xah Lee, for this report on punctuation frequency in computer languages: http://xahlee.info/comp/computer_language_char_distribution.html
-- This online tool I used to the image of the layout: http://www.keyboard-layout-editor.com/,
+- This online tool I used to generate the image of the layout: http://www.keyboard-layout-editor.com/,
 
 * How
 ** Installation
+Requirements:
+- Kinesis Advantage 2 and some basic familiarity with how it works
+  - manual here: https://kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-US_6-22-21.pdf
+
+1. Activate Power User Mode (progm + shift + esc)
+   - The led lights on the keyboard will flash four times when Power User Mode is activated, twice when it's deactivated
+   - To find out if the keyboard is in Power User Mode, open a text editor and hit progm + esc to print out a status report. If you're in Power User Mode, it will contain the line "Power user mode> on"
+2. Open the v-Drive (progm + F1)
+3. Navigate to the v-Drive and go into the "active" directory
+4. Replace either qwerty.txt or dvorak.txt from this repo, depending on which layout you want to replace 
+5. Close v-Drive (progm + F1)
+6. Activate either qwerty (progm + F3) or dvorak mode (progm + F4) depending on which layout you replaced in step 4
 
 ** Use
+pic goes here
+
 
 ** License
   
 ** Development
+*** how it was made
+subjectively figured out which keys are easiest for me to hit
+used jetbrains mps to get my head around it and generate layouts. probably overengineered 
+*** decisions made
+- thumbless seems better
+- looked into data for which letters, bigrams, and punct are most common
+- strong finger for number layer
+- f keys easy to hit bc i use them for modal editing with emacs hydra
+*** still to do
+have not worked with the number/control layer much so there could be improvements there
   
 ** Contributing
-
+- customize yourself
+- 
