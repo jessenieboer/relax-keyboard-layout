@@ -3,6 +3,8 @@
 * What
 A keyboard layout the Kinesis Advantage2 that's designed to minimize muscle usage.
 
+#+html:<img src="relax.jpg" alt="Relax keyboard layout" title="Relax keyboard layout">
+
 ** Features
 - The most commonly used letters and punctuation (biased towards programming) are assigned to the easiest-to-reach keys
 - Thanks to the Kinesis Advantage2, four different 'layers' allow us to reuse those easiest keys four times
@@ -41,7 +43,7 @@ Requirements:
 6. Activate either qwerty (progm + F3) or dvorak mode (progm + F4) depending on which layout you replaced in step 4
 
 ** Use
-pic goes here
+
 
 
 ** License
