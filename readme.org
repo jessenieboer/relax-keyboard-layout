@@ -1,20 +1,22 @@
 #+html:<h1 align="center">The Relax Keyboard Layout</h1>
 
 * What
-A keyboard layout the Kinesis Advantage2 that's designed to minimize muscle usage.
+A keyboard layout for the [[https://kinesis-ergo.com/keyboards/advantage2-keyboard/][Kinesis Advantage2]] keyboard that's designed to minimize muscle usage.
 
-#+html:<img src="relax.jpg" alt="Relax keyboard layout" title="Relax keyboard layout">
+#+html:<img src="images/relax.jpg" alt="Relax keyboard layout" title="Relax keyboard layout">
 
 ** Features
 - The most commonly used letters and punctuation (biased towards programming) are assigned to the easiest-to-reach keys
 - Thanks to the Kinesis Advantage2, four different 'layers' allow us to reuse those easiest keys four times
-- With a foot pedal, no thumb usage is necessary, allowing us to type from a relaxed hand position
-- Common bigrams are arranged either for opposite hands for an easy finger roll on one hand
+- With a [[https://kinesis-ergo.com/shop/advantage-single-pedal/][foot pedal]], no thumb usage is necessary, allowing us to type from a relaxed hand position
+- Common bigrams are arranged either for opposite hands for an easy one-hand typing
 - F keys are more accessible than on a normal keyboard
 - The Kinesis Advantage2 makes it easy to customize the layout
 
+Note that I have no affiliation with Kinesis; if it sounds like I'm advertising their keyboard, I'm just giving credit where credit is due.
+
 * Why
-I have a genetic muscle disease that causes my muscles to become exhausted very easily. I cannot sustain the exertion required for normal computer use, and if I try to push my hands and arms beyond their limits, it gets painful. Since developing and adapting to this keyboard layout, however, I've been able to be more productive without wearing out my muscles to an unhealthy degree.
+I have a [[https://ryr1.org/][genetic muscle disease]] that causes my muscles to become exhausted very easily. I cannot sustain the exertion required for normal computer use, and if I try to push my hands and arms beyond their limits, it gets painful. Since developing and adapting to this keyboard layout, however, I've been able to be more productive without wearing out my muscles to an unhealthy degree.
 
 * For Whom
 Myself and anyone else who finds that using the normal QWERTY layout is too strenuous or painful. I think this layout could especially help people with Repetitive Strain Injury from computer use and, while I'm no doctor, I suspect it might help prevent it.
@@ -30,8 +32,7 @@ Me, acknowledging:
 * How
 ** Installation
 Requirements:
-- Kinesis Advantage 2 and some basic familiarity with how it works
-  - manual here: https://kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-US_6-22-21.pdf
+- A Kinesis Advantage 2 keyboard and some basic familiarity with how it works (see the [[https://kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-US_6-22-21.pdf][manual]])
 
 1. Activate Power User Mode (progm + shift + esc)
    - The led lights on the keyboard will flash four times when Power User Mode is activated, twice when it's deactivated
@@ -43,23 +44,54 @@ Requirements:
 6. Activate either qwerty (progm + F3) or dvorak mode (progm + F4) depending on which layout you replaced in step 4
 
 ** Use
+There are 4 layers to this layout.
 
+The main layer contains letters, control keys and F keys. This is what a key does when pressed by itself, without holding any modifying keys.
 
+The capital layer is simply the capitalized main-layer letters; hold L-shift to type capitals. 
+
+The punctuation layer contains its namesake; hold R-shift to type punctuation. This is what I use the foot pedal for.
+
+The number/control layer contains numbers and number-adjacent punctuation on the left hand, and control commands (arrow keys, pgup and pgdn, etc...) on the right hand. Hold down kp-shift to access this layer.
+
+#+html:<img src="images/layers.jpg" alt="layers" title="layers">
+
+*** Personal ergonomics
+Though my setup is tailored to my particular physical needs, perhaps it will be of use to others. I find it to be quite comfortable and sustainable.
+
+I hold the keyboard on my lap using an old laptop holder, propping the bottom of the keyboard up with some [[https://www.amazon.com/Padded-Memory-Support-Office-Computer/dp/B07F7Y1LRL/][wrist rests]] so that it sits perpendicular to my lap rather than at downward angle.
+
+#+html:<img src="images/setup1.jpg" alt="keyboard on lap" title="keyboard on lap">
+
+Then I place more wrist rests on top of the keybord, on which I, go figure, rest my wrists. This way, my relaxed hands can dangle over the keywells, with a lot of my arm weight borne by the wrist rests. 
+
+#+html:<img src="images/setup2.jpg" alt="wrist wrests" title="wrist wrests">
+
+I can also rest my elbows on my chair's armrests if I want to support my arms that way, but having my elbows tucked close to my body is a bit more comfortable.
 
 ** License
   
 ** Development
-*** how it was made
-subjectively figured out which keys are easiest for me to hit
-used jetbrains mps to get my head around it and generate layouts. probably overengineered 
-*** decisions made
-- thumbless seems better
-- looked into data for which letters, bigrams, and punct are most common
-- strong finger for number layer
-- f keys easy to hit bc i use them for modal editing with emacs hydra
+*** How I made it
+There is nothing super formal or scientific behind this design; it's mostly the result of experimentation and looking stuff up on the internet. I started by figuring out which physical keys took the least muscular effort for me to hit. That is reflected in the colors in the top image: the greenest keys are easiest from a neutral hand position and go from yellow to orange the harder they become.
+
+Then I mapped the letters and punctuation, trying to put the most frequently used characters in the easiest-to-reach places, also taking into account how common combinations would be typed. This took plenty of experimentation, as did determining the most comfortable places for modifier keys. 
+
+During this time I developed a domain-specific language using [[https://www.jetbrains.com/mps/][Jetbrains MPS]] in order to get my head around the problem and to generate layouts in the correct format. This let me iterate quickly on the key placement, but I think the languge itself is clunky and overengineered and not much use to anyone it its current form.
+
+*** Major decisions and the reasons behind them
+- Thumbs are not intended to be used at all, because hitting a key with my thumb disrupts my hand's relaxation too much. The R-shift on the thumb keys are just there in case you don't have a foot pedal.
+- Rather than always alternating hands, some common bigrams are typed with the same hand. This is because there are several same-hand combinations that are quite easy, (such as 'he' and 'es') and I wanted to put them to use.
+- I use the middle finger for shifting to the number/control layer (kp-shift) because I found it easy to strech that finger out, stab downward, and hold it there with the weight of my hand. There will be times I need to hold that position with one hand and make many keystrokes with the other, and the middle finger seemed the strongest candidate for sustaining that position.
+- I use the ring finger for capitals (L-shift); stretching out that finger out is easy enough, and I don't type captials so frequently as to warrant a premium position for L-shift.
+Also, I will ususally only captials one-at-a-time, so I don't need a stronger finger to lean on for an extended period.
+- The alt, ctrl, and win keys are in hard-to-reach areas because I don't use them if I can help it; I primarily use Emacs with some customizations that enable modal editing. This is also why a couple F keys are in premium spots: I use them to switch between typing literal characters and issuing commands in Emacs.
 *** still to do
 have not worked with the number/control layer much so there could be improvements there
-  
+caps lock
+make a qwerty.txt
 ** Contributing
 - customize yourself
-- 
+- the F keys and modifier keys are the most flexible. if you use ctrl or alt
+- bksp/tab/f1/f7, pointer finger slots, are candidates to put more useful things for you (show how to customize)
+- can put the r-shift in the f2 and f8 slot to make them more accessible
