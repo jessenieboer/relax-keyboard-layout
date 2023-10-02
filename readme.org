@@ -7,6 +7,7 @@
 - [[#for-whom][For Whom]]
 - [[#by-whom][By Whom]]
 - [[#how][How]]
+  - [[#requirements][Requirements]]
   - [[#installation][Installation]]
   - [[#use][Use]]
     - [[#my-setup][My setup]]
@@ -24,7 +25,7 @@ A keyboard layout for the [[https://kinesis-ergo.com/keyboards/advantage2-keyboa
 - The most commonly used letters and punctuation (biased towards programming) are assigned to the easiest-to-reach keys
 - Thanks to the Kinesis Advantage2, four different 'layers' allow us to reuse those easiest keys four times
 - With a [[https://kinesis-ergo.com/shop/advantage-single-pedal/][foot pedal]], no thumb usage is necessary, allowing us to type from a relaxed hand position
-- Common bigrams are arranged either for opposite hands for an easy one-hand typing
+- Common bigrams are arranged either for opposite hands for easy one-handed typing
 - F keys are more accessible than on a normal keyboard
 - The Kinesis Advantage2 makes it easy to customize the layout
 
@@ -34,32 +35,31 @@ Note that I have no affiliation with Kinesis; if it sounds like I'm advertising 
 I have a [[https://ryr1.org/][genetic muscle disease]] that causes my muscles to become exhausted very easily. I cannot sustain the exertion required for normal computer use, and if I try to push my hands and arms beyond their limits, it gets painful. Since developing and adapting to this keyboard layout, however, I've been able to be more productive without wearing out my muscles to an unhealthy degree.
 
 * For Whom
-Myself and anyone else who finds that using the normal QWERTY layout is too strenuous or painful. I think this layout could especially help people with Repetitive Strain Injury from computer use and, while I'm no doctor, I suspect it might help prevent it.
+Myself and anyone else who finds that using QWERTY is too strenuous or painful, especially those with some form of Repetitive Strain Injury.
 
 * By Whom
 Me, acknowledging:
 - Kinesis, for their excellent keyboard: https://kinesis-ergo.com/keyboards/advantage2-keyboard/
-- The workman layout, from which I drew some inspiration: https://workmanlayout.org/
+- The Workman Keyboard Layout, from which I drew some inspiration: https://workmanlayout.org/
 - I believe I used this excellent site for data on the most commonly used letters, bigrams, and trigrams in English, but it seems to have disappeared: http://mtgap.bilfo.com/theory-of-letter-frequency.html
 - Xah Lee, for this report on punctuation frequency in computer languages: http://xahlee.info/comp/computer_language_char_distribution.html
 - This online tool I used to generate the image of the layout: http://www.keyboard-layout-editor.com/,
 
 * How
+** Requirements
+- a Kinesis Advantage2 keyboard
+- some basic familiarity with how it works (see the [[https://kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-US_6-22-21.pdf][manual]])
 ** Installation
-Requirements:
-- A Kinesis Advantage 2 keyboard and some basic familiarity with how it works (see the [[https://kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-US_6-22-21.pdf][manual]])
-
 1. Activate Power User Mode (progm + shift + esc)
    - The led lights on the keyboard will flash four times when Power User Mode is activated, twice when it's deactivated
    - To find out if the keyboard is in Power User Mode, open a text editor and hit progm + esc to print out a status report. If you're in Power User Mode, it will contain the line "Power user mode> on"
 2. Open the v-Drive (progm + F1)
 3. Navigate to the v-Drive and go into the "active" directory
-4. Replace either qwerty.txt or dvorak.txt from this repo, depending on which layout you want to replace 
-5. Close v-Drive (progm + F1)
+4. Replace either qwerty.txt or dvorak.txt with the one from this repo, depending on which layout you want to replace
+5. Close the v-Drive (progm + F1)
 6. Activate either qwerty (progm + F3) or dvorak mode (progm + F4) depending on which layout you replaced in step 4
-
 ** Use
-There are 4 layers to this layout.
+There are 4 'layers' to this layout.
 
 The main layer contains letters, control keys and F keys. This is what a key does when pressed by itself, without holding any modifying keys.
 
@@ -86,7 +86,9 @@ Then I place more wrist rests on top of the keybord, on which I, go figure, rest
 I can also rest my elbows on my chair's armrests if I want to support my arms that way, but having my elbows tucked close to my body is a bit more comfortable.
 
 *** Customization
-While you can customize everything in the layout, the F keys, bksp, tab, and modifier keys are the most flexible; you can swap those around easily while still keeping the core letter/punctuation arrangement intact. The F1/F7 positions are especially useful; if you don't use F keys often, consider moving one of your frequently used modifier keys there, or the R-shifts if you have no foot pedal. And if you do want to make use of your thumbs, the F2/F8 positions can easier for them to reach.
+While you can customize everything in the layout, the F keys, bksp, tab, and modifier keys are the most flexible; you can swap those around easily while still keeping the core letter/punctuation arrangement intact.
+
+The F1/F7 positions are especially useful. If you don't use F keys often, consider moving one of your frequently used modifier keys there, or the R-shifts if you have no foot pedal. And if you do want to make use of your thumbs, the F2/F8 positions can be easier for them to reach.
 
 You can refer to the Kinesis Advantage2 [[https://kinesis-ergo.com/wp-content/uploads/Adv2-Users-Manual-US_6-22-21.pdf][manual]] for detailed information on configuring the keyboard using text files, but here is a quick overview.
 
@@ -103,12 +105,7 @@ meaning
 <code>[the physical key you press]>[what it should do when you press it]</code>
 <br>
 <br>
-See pages 37-38 in the manual for a map of location tokens and a list of action tokens.
-<br>
-<br>
-<br>
-<br>
-For these examples, we will be editing dvorak.txt, so use this image from the manual as a reference:
+See pages 37-38 in the manual for a map of location tokens and a list of action tokens. For these examples, we will be editing dvorak.txt, so use this image from the manual as a reference:
 <img src="images/dvorak.jpg" alt="dvorak" title="dvorak">
 Switch the main layer for dvorak 'k' to 'L-ctrl' (instead of 'F1' as in Relax layout):
 <br>
@@ -153,20 +150,22 @@ The punctuation layer is accessed through R-shift.
   
 ** Development
 *** How I made it
-There is nothing super formal or scientific behind this design; it's mostly the result of experimentation and looking stuff up on the internet. I started by figuring out which physical keys took the least muscular effort for me to hit. That is reflected in the colors in the top image: the greenest keys are easiest from a neutral hand position and go from yellow to orange the harder they become.
+There is nothing super formal or scientific behind this design; it's mostly the result of experimentation and looking stuff up on the internet. I started by figuring out which physical keys took the least muscular effort for me to hit. That is reflected in the colors in the first  image: the greenest keys are easiest from a neutral hand position and go from yellow to orange the harder they become.
 
 Then I mapped the letters and punctuation, trying to put the most frequently used characters in the easiest-to-reach places, also taking into account how common combinations would be typed. This took plenty of experimentation, as did determining the most comfortable places for modifier keys. 
 
 During this time I developed a domain-specific language using [[https://www.jetbrains.com/mps/][Jetbrains MPS]] in order to get my head around the problem and to generate layouts in the correct format. This let me iterate quickly on the key placement, but I think the languge itself is clunky and overengineered and not much use to anyone it its current form.
 
 *** Major decisions and my reasoning
-- Thumbs are not intended to be used at all, because hitting a key with my thumb disrupts my hand's relaxation too much. The R-shift on the thumb keys are just there in case you don't have a foot pedal.
-- Rather than always alternating hands, some common bigrams are typed with the same hand. This is because there are several same-hand combinations that are quite easy, (such as 'he' and 'es') and I wanted to put them to use.
-- I use the middle finger for shifting to the number/control layer (kp-shift) because I found it easy to strech that finger out, stab downward, and hold it there with the weight of my hand. There will be times I need to hold that position with one hand and make many keystrokes with the other, and the middle finger seemed the strongest candidate for sustaining that position.
-- I use the ring finger for capitals (L-shift); stretching out that finger out is easy enough, and I don't type captials so frequently as to warrant a premium position for L-shift. Also, I will ususally only captializer one-at-a-time, so I don't need a stronger finger to lean on for an extended period.
-- The alt, ctrl, and win keys are in hard-to-reach areas because I don't use them if I can help it; I primarily use Emacs with some customizations that enable modal editing. This is also why a couple F keys are in premium spots: I use them to switch between typing literal characters and issuing commands in Emacs.
+- Thumbs are not intended to be used at all, because hitting a key with my thumb disrupts my hand's relaxed position. The R-shift on the thumb keys are just there in case you don't have a foot pedal.
+- Rather than always alternating hands, some common bigrams are typed with the same hand. This is because there are several same-hand combinations that are quite easy (such as 'he' and 'es'), and I wanted to put them to good use.
+- I use the middle finger for shifting to the number/control layer (kp-shift) because I found it easy to strech that finger out, stab downward, and hold it there with the weight of my hand. There will be times when I need to hold that position with one hand and make several keystrokes with the other, and the middle finger seemed the strongest candidate for sustaining that position.
+- I use the ring finger for capitals (L-shift); stretching out that finger on one hand and typing something with the other is easy enough, and I don't type captials so frequently as to warrant a premium position for L-shift. Also, I will ususally only captialize one-at-a-time, so I don't need a stronger finger to lean on for an extended period.
+- The alt, ctrl, and win keys are in hard-to-reach areas because I don't use them if I can help it. Rather, I primarily use [[https://www.gnu.org/software/emacs/][Emacs]] with some customizations that enable modal editing. This is also why a F1 and F7 are in premium spots: I use them to switch between typing literal characters and issuing commands in Emacs. I do make use of ctrl when using [[https://orgmode.org/][org-mode]], but I have a separate foot pedal for it.
+- Getting to those alt, ctrl, and win keys requires a slight change of hand position, and the key in the corner is the easiest to find when doing that. I use win most frequently of those modifier keys, so that's why it's in the corner spot.
 
 *** To do
 - I have not worked much with the number/control layer; I think there are improvements to be made there
  
 ** Contributing
+No plans to collaborate at the moment, but if it comes up I'll figure it out.
