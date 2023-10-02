@@ -77,30 +77,61 @@ You can refer to the Kinesis Advantage2 [[https://kinesis-ergo.com/wp-content/up
 
 #+begin_html
 Generally, the format to remap a key is
+<br>
+<br>
 <code>[location token]>[action token]</code>
+<br>
+<br>
 meaning
+<br>
+<br>
 <code>[the physical key you press]>[what it should do when you press it]</code>
+<br>
+<br>
 See pages 37-38 in the manual for a map of location tokens and a list of action tokens.
-
+<br>
+<br>
+<br>
+<br>
 For these examples, we will be editing dvorak.txt, so use this image from the manual as a reference:
 <img src="images/dvorak.jpg" alt="dvorak" title="dvorak">
-
 Switch the main layer for dvorak 'k' to 'L-ctrl' (instead of 'F1' as in Relax layout):
+<br>
+<br>
 <code>[k]>[lctrl]</code>
-
+<br>
+<br>
+<br>
+<br>
 Switch the main layer for dvorak 'k' to '(' (instead of 'F1'):
+<br>
+<br>
 <code>[k]>{-rshift}{9}{+rshift}</code>
+<br>
+<br>
 This is an example of how do to punctuation that originally required a shift key.
-
-Switch the number/control layer for dvorak 'g' to 'page up' (instead of 'home') 
-number/control layer:
+<br>
+<br>
+<br>
+<br>
+Switch the number/control layer for dvorak 'g' to 'page up' (instead of 'home'):
+<br>
+<br>
 <code>[kp7]>[pup]</code>
+<br>
+<br>
 Note that I implement the conceptual layer that I call the "number/control layer" by making use of what Kinesis calls the "keypad layer" or "embedded layer" of the physical keyboard. The keypad layer has its own set of location tokens.
-
+<br>
+<br>
+<br>
+<br>
 Switch punctuation layer for dvorak 'a' to '+' (instead of '/'):
+<br>
+<br>
 <code>{rshift}{a}>{/}</code>
+<br>
+<br>
 The punctuation layer is accessed through R-shift.
-
 #+end_html
 
 ** License
@@ -119,7 +150,6 @@ During this time I developed a domain-specific language using [[https://www.jetb
 - I use the middle finger for shifting to the number/control layer (kp-shift) because I found it easy to strech that finger out, stab downward, and hold it there with the weight of my hand. There will be times I need to hold that position with one hand and make many keystrokes with the other, and the middle finger seemed the strongest candidate for sustaining that position.
 - I use the ring finger for capitals (L-shift); stretching out that finger out is easy enough, and I don't type captials so frequently as to warrant a premium position for L-shift. Also, I will ususally only captializer one-at-a-time, so I don't need a stronger finger to lean on for an extended period.
 - The alt, ctrl, and win keys are in hard-to-reach areas because I don't use them if I can help it; I primarily use Emacs with some customizations that enable modal editing. This is also why a couple F keys are in premium spots: I use them to switch between typing literal characters and issuing commands in Emacs.
-- 
 
 *** To do
 - I have not worked much with the number/control layer; I think there are improvements to be made there
