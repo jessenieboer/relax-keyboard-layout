@@ -54,7 +54,7 @@ The punctuation layer contains its namesake; hold R-shift to type punctuation. T
 
 The number/control layer contains numbers and number-adjacent punctuation on the left hand, and control commands (arrow keys, pgup and pgdn, etc...) on the right hand. Hold down kp-shift to access this layer.
 
-#+html:<img align="center" src="images/layers.jpg" alt="layers" title="layers">
+#+html:<img src="images/layers.jpg" alt="layers" title="layers">
 
 *** Personal ergonomics
 Though my setup is tailored to my particular physical needs, perhaps it will be of use to others. I find it to be quite comfortable and sustainable.
