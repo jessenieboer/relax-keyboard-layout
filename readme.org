@@ -1,10 +1,25 @@
 #+html:<h1 align="center">The Relax Keyboard Layout</h1>
+#+html:<img align="center" src="images/relax.jpg" alt="Relax keyboard layout" title="Relax keyboard layout">
+* Table of Contents
+- [[#what][What]]
+  - [[#features][Features]]
+- [[#why][Why]]
+- [[#for-whom][For Whom]]
+- [[#by-whom][By Whom]]
+- [[#how][How]]
+  - [[#installation][Installation]]
+  - [[#use][Use]]
+    - [[#my-setup][My setup]]
+    - [[#customization][Customization]]
+  - [[#license][License]]
+  - [[#development][Development]]
+    - [[#how-i-made-it][How I made it]]
+    - [[#major-decisions-and-my-reasoning][Major decisions and my reasoning]]
+    - [[#to-do][To do]]
+  - [[#contributing][Contributing]]
 
 * What
 A keyboard layout for the [[https://kinesis-ergo.com/keyboards/advantage2-keyboard/][Kinesis Advantage2]] keyboard that's designed to minimize muscle usage.
-
-#+html:<img align="center" src="images/relax.jpg" alt="Relax keyboard layout" title="Relax keyboard layout">
-
 ** Features
 - The most commonly used letters and punctuation (biased towards programming) are assigned to the easiest-to-reach keys
 - Thanks to the Kinesis Advantage2, four different 'layers' allow us to reuse those easiest keys four times
@@ -56,7 +71,7 @@ The number/control layer contains numbers and number-adjacent punctuation on the
 
 #+html:<img src="images/layers.jpg" alt="layers" title="layers">
 
-*** Personal ergonomics
+*** Personal setup
 Though my setup is tailored to my particular physical needs, perhaps it will be of use to others. I find it to be quite comfortable and sustainable.
 
 I hold the keyboard on my lap using an old laptop holder, propping the bottom of the keyboard up with some [[https://www.amazon.com/Padded-Memory-Support-Office-Computer/dp/B07F7Y1LRL/][wrist rests]] so that it sits perpendicular to my lap rather than at downward angle.
@@ -144,7 +159,7 @@ Then I mapped the letters and punctuation, trying to put the most frequently use
 
 During this time I developed a domain-specific language using [[https://www.jetbrains.com/mps/][Jetbrains MPS]] in order to get my head around the problem and to generate layouts in the correct format. This let me iterate quickly on the key placement, but I think the languge itself is clunky and overengineered and not much use to anyone it its current form.
 
-*** Major decisions and the reasons behind them
+*** Major decisions and my reasoning
 - Thumbs are not intended to be used at all, because hitting a key with my thumb disrupts my hand's relaxation too much. The R-shift on the thumb keys are just there in case you don't have a foot pedal.
 - Rather than always alternating hands, some common bigrams are typed with the same hand. This is because there are several same-hand combinations that are quite easy, (such as 'he' and 'es') and I wanted to put them to use.
 - I use the middle finger for shifting to the number/control layer (kp-shift) because I found it easy to strech that finger out, stab downward, and hold it there with the weight of my hand. There will be times I need to hold that position with one hand and make many keystrokes with the other, and the middle finger seemed the strongest candidate for sustaining that position.
