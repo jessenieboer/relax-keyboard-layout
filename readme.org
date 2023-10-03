@@ -137,16 +137,14 @@ Note that I implement the conceptual layer that I call the "number/control layer
 <br>
 <br>
 <br>
-Switch punctuation layer for dvorak 'a' to '+' (instead of '/'):
+Switch punctuation layer for dvorak 'a' to '.' (instead of '/'):
 <br>
 <br>
-<code>{rshift}{a}>{/}</code>
-<br>
-<br>
-The punctuation layer is accessed through R-shift.
+<code>{rshift}{a}>{.}</code>
 #+end_html
 
 ** License
+MIT - see [[LICENSE][LICENSE]]
   
 ** Development
 *** How I made it
