@@ -5,20 +5,20 @@
   - [[#features][Features]]
 - [[#why][Why]]
 - [[#for-whom][For Whom]]
-- [[#by-whom][By Whom]]
 - [[#how][How]]
   - [[#requirements][Requirements]]
   - [[#installation][Installation]]
   - [[#use][Use]]
     - [[#my-setup][My setup]]
     - [[#customization][Customization]]
-  - [[#license][License]]
+    - [[#license][License]]
   - [[#development][Development]]
-    - [[#how-i-made-it][How I made it]]
-    - [[#major-decisions-and-my-reasoning][Major decisions and my reasoning]]
+    - [[#process][Process]]
+    - [[#important-decisions][Important decisions]]
     - [[#to-do][To do]]
-  - [[#contributing][Contributing]]
-
+    - [[#contributing][Contributing]]
+- [[#by-whom][By Whom]]
+  
 * What
 A keyboard layout for the [[https://kinesis-ergo.com/keyboards/advantage2-keyboard/][Kinesis Advantage2]] keyboard that's designed to minimize muscle usage.
 ** Features
@@ -36,14 +36,6 @@ I have a [[https://ryr1.org/][genetic muscle disease]] that causes my muscles to
 
 * For Whom
 Myself and anyone else who finds that using QWERTY is too strenuous or painful, especially those with some form of Repetitive Strain Injury.
-
-* By Whom
-Me, acknowledging:
-- Kinesis, for their excellent keyboard: https://kinesis-ergo.com/keyboards/advantage2-keyboard/
-- The Workman Keyboard Layout, from which I drew some inspiration: https://workmanlayout.org/
-- I believe I used this excellent site for data on the most commonly used letters, bigrams, and trigrams in English, but it seems to have disappeared: http://mtgap.bilfo.com/theory-of-letter-frequency.html
-- Xah Lee, for this report on punctuation frequency in computer languages: http://xahlee.info/comp/computer_language_char_distribution.html
-- This online tool I used to generate the image of the layout: http://www.keyboard-layout-editor.com/,
 
 * How
 ** Requirements
@@ -71,7 +63,7 @@ The number/control layer contains numbers and number-adjacent punctuation on the
 
 #+html:<img src="images/layers.jpg" alt="layers" title="layers">
 
-*** Personal setup
+*** My setup
 Though my setup is tailored to my particular physical needs, perhaps it will be of use to others. I find it to be quite comfortable and sustainable.
 
 I hold the keyboard on my lap using an old laptop holder, propping the bottom of the keyboard up with some [[https://www.amazon.com/Padded-Memory-Support-Office-Computer/dp/B07F7Y1LRL/][wrist rests]] so that it sits perpendicular to my lap rather than at downward angle.
@@ -143,18 +135,17 @@ Switch punctuation layer for dvorak 'a' to '.' (instead of '/'):
 <code>{rshift}{a}>{.}</code>
 #+end_html
 
-** License
-MIT - see [[LICENSE][LICENSE]]
-  
+*** License
+MIT - see [[LICENSE][LICENSE]]  
 ** Development
-*** How I made it
+*** Process
 There is nothing super formal or scientific behind this design; it's mostly the result of experimentation and looking stuff up on the internet. I started by figuring out which physical keys took the least muscular effort for me to hit. That is reflected in the colors in the first  image: the greenest keys are easiest from a neutral hand position and go from yellow to orange the harder they become.
 
 Then I mapped the letters and punctuation, trying to put the most frequently used characters in the easiest-to-reach places, also taking into account how common combinations would be typed. This took plenty of experimentation, as did determining the most comfortable places for modifier keys. 
 
 During this time I developed a domain-specific language using [[https://www.jetbrains.com/mps/][Jetbrains MPS]] in order to get my head around the problem and to generate layouts in the correct format. This let me iterate quickly on the key placement, but I think the languge itself is clunky and overengineered and not much use to anyone it its current form.
 
-*** Major decisions and my reasoning
+*** Important decisions
 - Thumbs are not intended to be used at all, because hitting a key with my thumb disrupts my hand's relaxed position. The R-shift on the thumb keys are just there in case you don't have a foot pedal.
 - Rather than always alternating hands, some common bigrams are typed with the same hand. This is because there are several same-hand combinations that are quite easy (such as 'he' and 'es'), and I wanted to put them to good use.
 - I use the middle finger for shifting to the number/control layer (kp-shift) because I found it easy to strech that finger out, stab downward, and hold it there with the weight of my hand. There will be times when I need to hold that position with one hand and make several keystrokes with the other, and the middle finger seemed the strongest candidate for sustaining that position.
@@ -165,5 +156,12 @@ During this time I developed a domain-specific language using [[https://www.jetb
 *** To do
 - I have not worked much with the number/control layer; I think there are improvements to be made there
  
-** Contributing
+*** Contributing
 No plans to collaborate at the moment, but if it comes up I'll figure it out.
+* By Whom
+Me, acknowledging:
+- Kinesis, for their excellent keyboard: https://kinesis-ergo.com/keyboards/advantage2-keyboard/
+- The Workman Keyboard Layout, from which I drew some inspiration: https://workmanlayout.org/
+- I believe I used this excellent site for data on the most commonly used letters, bigrams, and trigrams in English, but it seems to have disappeared: http://mtgap.bilfo.com/theory-of-letter-frequency.html
+- Xah Lee, for this report on punctuation frequency in computer languages: http://xahlee.info/comp/computer_language_char_distribution.html
+- This online tool I used to generate the image of the layout: http://www.keyboard-layout-editor.com/
