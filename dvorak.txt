@@ -55,7 +55,7 @@
 [7]>[caps]
 [6]>[null]
 [lp-tab]>[null]
-[mp-kpshf]>[rshift]
+[mp-kpshf]>[rctrl]
 [rp-kpent]>[null]
 [f1]>[f13]
 [f2]>[f14]
